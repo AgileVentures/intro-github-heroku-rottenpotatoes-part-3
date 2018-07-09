@@ -1,8 +1,7 @@
-require "rspec"
-require "nokogiri"
+require 'rspec'
+require 'nokogiri'
 require 'rubygems'
 require 'mechanize'
-require 'ruby-debug'
 
 uri = ENV['HEROKU_URI']
 uri = "http://" + uri if uri and uri !~ /^http:\/\//
