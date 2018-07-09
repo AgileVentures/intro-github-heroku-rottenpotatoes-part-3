@@ -18,6 +18,6 @@ describe "App" do
   end
   it "should include the appropriate text [10 points]" do
     page = agent.get($url)
-    expect(page.body.include?('Hello, SaaS world')).to be_true
+    expect(page.body).to include('Hello, SaaS world') 
   end
 end
